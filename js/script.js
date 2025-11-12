@@ -232,193 +232,30 @@ $(document).ready(function() {
 
     // Projects data - embedded directly in JavaScript
     const PROJECTS_DATA = [
-    {
-        "id": "hbase-wal",
-        "title": "Write-Ahead Logs (WAL) implementation guide",
-        "projectType": "Feature Launch Documentation, CLI Reference",
-        "description": "Created complete documentation suite for  HBase Write-Ahead Logs feature for Amazon EMR from scratch. WAL prevents data loss during system failures—a critical data protection capability.",
-        "fullDescription": "Created complete documentation suite for Amazon EMR's HBase Write-Ahead Logs feature from scratch. WAL prevents data loss during system failures—a critical data protection capability. Worked with engineering to understand distributed database architecture and translated it into developer-friendly guides. Wrote step-by-step implementation docs, CLI reference, service-linked roles configuration, and troubleshooting scenarios.",
-        "skills": ["Net-new feature documentation", "Complex technical concept explanation", "CLI documentation", "Decision tree design", "Troubleshooting content"],
-        "results": "Launched simultaneously with feature. Became definitive resource for EMR WAL implementation. Enabled day-one customer adoption of critical data protection feature.",
-        "link": "https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-wal.html",
-        "tags": ["Feature Documentation", "CLI Reference", "Technical Writing", "AWS", "Data Protection", "Developer Guides"]
-    },
-    {
-        "id": "aurora-encryption",
-        "title": "Data encryption for Amazon Aurora DSQL",
-        "projectType": "Feature Documentation, Technical Writing",
-        "description": "Created comprehensive documentation for Aurora DSQL's data encryption feature from launch. Worked directly with engineering team to understand encryption architecture, key management, and security model.",
-        "fullDescription": "Created comprehensive documentation for Aurora DSQL's data encryption feature from launch. Worked directly with engineering team to understand encryption architecture, key management, and security model. Wrote developer guide explaining encryption at rest, in transit, and key rotation procedures. Included code examples and CLI reference.",
-        "skills": ["Technical documentation for complex features", "Security and compliance documentation", "Developer audience writing", "Code sample creation", "Collaboration with engineering"],
-        "results": "Launched with feature. Provided developers with clear guidance on implementing encryption correctly for compliance-sensitive workloads.",
-        "link": "https://docs.aws.amazon.com/aurora-dsql/latest/userguide/data-encryption.html",
-        "tags": ["Technical Writing", "Security Documentation", "Developer Docs", "AWS", "Compliance", "API Documentation"]
-    },
-    {
-        "id": "s3-access-grants",
-        "title": "S3 Access Grants integration",
-        "projectType": "Integration Documentation, API Documentation",
-        "description": "Documented the integration between Amazon EMR and S3 Access Grants, enabling fine-grained access control for S3 data. Explained concepts, configuration steps, IAM permissions, and troubleshooting.",
-        "fullDescription": "Documented the integration between Amazon EMR and S3 Access Grants, enabling fine-grained access control for S3 data. Explained concepts, configuration steps, IAM permissions, and troubleshooting. Created workflow diagrams (collaborated with visual designer on graphics) and code examples.",
-        "skills": ["Integration documentation", "Cross-service technical writing", "Conceptual explanation", "Procedural documentation", "Collaboration with designers"],
-        "results": "Enabled customers to implement advanced S3 access controls with EMR. Clear documentation reduced configuration errors.",
-        "link": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-access-grants.html",
-        "image": "img/projects/s3.png",
-        "tags": ["Integration Docs", "API Documentation", "AWS", "IAM", "Technical Writing", "Cross-Service"]
-    },
-    {
-        "id": "service-linked-roles",
-        "title": "Service-linked roles configuration",
-        "projectType": "Security Documentation, Configuration Guide",
-        "description": "Documented service-linked roles for Amazon EMR—IAM roles that are linked directly to AWS services. Explained when they're created, what permissions they include, how to edit them, and how to delete them.",
-        "fullDescription": "Documented service-linked roles for Amazon EMR—IAM roles that are linked directly to AWS services. Explained when they're created, what permissions they include, how to edit them, and how to delete them. Critical for customers managing security and compliance.",
-        "skills": ["Security and IAM documentation", "Permission and role documentation", "Audience-appropriate technical depth", "Procedural writing"],
-        "results": "Provided clear guidance on IAM security model for EMR. Helped customers implement least-privilege access correctly.",
-        "link": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/using-service-linked-roles-wal.html",
-        "tags": ["Security Documentation", "IAM", "Configuration Guides", "AWS", "Compliance"]
-    },
-    {
-        "id": "release-notes",
-        "title": "Comprehensive release notes",
-        "projectType": "Release Communication, Feature Documentation",
-        "description": "Created detailed release notes for Amazon EMR releases, documenting new features, improvements, bug fixes, and known issues. Translated engineering changelogs into customer-friendly summaries.",
-        "fullDescription": "Created detailed release notes for Amazon EMR releases, documenting new features, improvements, bug fixes, and known issues. Translated engineering changelogs into customer-friendly summaries with links to relevant documentation.",
-        "skills": ["Release communication", "Technical summarization", "Customer-focused writing", "Cross-linking and information architecture"],
-        "results": "Kept customers informed of product changes. Enabled quick assessment of release value and upgrade decisions.",
-        "link": "https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-7x.html",
-        "tags": ["Release Notes", "Technical Writing", "AWS", "Communication"]
-    },
-    {
-        "id": "wandb-tutorial",
-        "title": "Content improvement: Weights & Biases machine-learning experiment tracking with PyTorch",
-        "projectType": "Content Revision, Before/After Improvement",
-        "description": "Revised existing tutorial on integrating Weights & Biases with PyTorch projects. Original content was technically accurate but verbose and difficult to follow.",
-        "fullDescription": "Revised existing tutorial on integrating Weights & Biases with PyTorch projects. Original content was technically accurate but verbose and difficult to follow. Restructured for clarity, simplified language, improved code examples, and added clearer prerequisites and troubleshooting.",
-        "skills": ["Content editing and improvement", "Tutorial writing", "Code example refinement", "Information architecture", "User-focused revision"],
-        "results": "Improved tutorial comprehension and completion rates. Reduced user friction in adopting ML experiment tracking.",
-        "link": "https://github.com/wandb/docs/pull/1385",
-        "tags": ["Content Revision", "Tutorial Writing", "ML/AI", "User Experience"]
-    },
-    {
-        "id": "emr-console-redesign",
-        "title": "Amazon EMR console redesign",
-        "projectType": "UX writing for AWS Management Console",
-        "description": "Led content design for the complete redesign of create/modify cluster workflows. Wrote all interface text including section titles, field labels, help panels, descriptions, radio button labels, and navigational elements.",
-        "fullDescription": "Led content design for the complete redesign of Amazon EMR's cluster creation and modification workflows. Wrote all interface text including section titles, field labels, help panels, descriptions, radio button labels, and navigational elements. Collaborated with product designers through multiple Figma iterations, ensuring content aligned with CloudScape design system and AWS Style Guide standards for terminology, accessibility, and global audiences.",
-        "skills": ["UX writing for complex technical workflows", "Cross-functional collaboration (design, engineering, product)", "Design system implementation (CloudScape)", "Progressive disclosure and information architecture", "Accessibility and inclusive language", "Writing for global/ESL audiences"],
-        "results": "Launched with redesigned console. Improved clarity of cluster configuration process for millions of AWS developers. Reduced user errors through clearer labeling and contextual help.",
-        "link": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/whats-new-in-console.html",
-        "image": "img/projects/emr-console-thumb.png",
-        "tags": ["UX Writing", "Interface Design", "CloudScape", "AWS", "Design Systems", "Accessibility"]
-    },
-    {
-        "id": "emr-error-messages",
-        "title": "EMR error message standardization",
-        "projectType": "Content Strategy, UX Writing",
-        "description": "Led initiative to refactor the top 20 most-emitted Amazon EMR console errors. Worked with engineering to add a new plain-language ErrorMessage field to the error structure.",
-        "fullDescription": "Led initiative to refactor the top 20 most-emitted Amazon EMR console errors. Worked with engineering to add a new plain-language ErrorMessage field to the error structure (previously only programmatic ErrorCode and ErrorData existed). Wrote customer-facing error messages and created corresponding troubleshooting resolution pages in the developer guide. Designed reusable error message framework adopted across EMR service.",
-        "skills": ["Technical writing", "Error message design", "Self-service content strategy", "Cross-functional influence (changed product architecture)", "Reusable framework creation"],
-        "results": "Transformed programmatic-only errors into actionable guidance. Enabled customers to self-resolve issues, reducing support case volume. Framework adopted as standard across EMR service for consistent, helpful error communication.",
-        "link": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troubleshoot-error-errordetail.html",
-        "image": "img/projects/error-thumb.png",
-        "tags": ["Error Messages", "Content Strategy", "UX Writing", "Information Architecture", "AWS", "Self-Service"]
-    },
-    {
-        "id": "notebooks-workspaces",
-        "title": "EMR Notebooks to Workspaces transition",
-        "projectType": "UX Writing, Change Management",
-        "description": "Wrote in-product guidance to educate users on major conceptual changes in the redesigned EMR Studio console. The product was shifting from a \"Notebooks\" model to a \"Workspaces\" model.",
-        "fullDescription": "Wrote in-product guidance to educate users on major conceptual changes in the redesigned EMR Studio console. The product was shifting from a \"Notebooks\" model to a \"Workspaces\" model, requiring clear explanation of new concepts, migration paths, and updated workflows. Created content for landing page, action panels, and contextual help to support smooth transition.",
-        "skills": ["Conceptual explanation", "Change management through content", "User education in-product", "Information design", "Action-oriented writing"],
-        "link": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-migration.html",
-        "results": "Enabled smooth migration from legacy console to new experience. Users could understand new model and take appropriate actions without requiring extensive support.",
-        "image": "img/projects/notebooks.png",
-        "tags": ["UX Writing", "Change Management", "User Education", "Information Design", "AWS"]
-    },
-    {
-        "id": "sugarbpm",
-        "title": "SugarBPM administrator guide",
-        "projectType": "Administrator Documentation, Business Process Documentation",
-        "description": "Created comprehensive administrator guide for SugarBPM, SugarCRM's business process management and workflow automation tool. Documented process design, automation rules, email templates, approval workflows, and system administration.",
-        "fullDescription": "Created comprehensive administrator guide for SugarBPM—SugarCRM's business process management and workflow automation tool. Documented process design, automation rules, email templates, approval workflows, and system administration. Wrote for technical administrators managing complex business processes.",
-        "skills": ["Administrator-level technical writing", "Business process documentation", "Workflow documentation", "System configuration writing"],
-        "results": "Enabled administrators to successfully configure and manage automated business processes. Reduced support inquiries for BPM configuration.",
-        "link": "https://support.sugarcrm.com/smartlinks/administration_guide/sugarbpm/",
-        "tags": ["Administrator Docs", "Business Process", "Workflow Automation", "SugarCRM", "Technical Writing"]
-    },
-    {
-        "id": "status-tracking",
-        "title": "Admin tutorial: Tracking record status duration",
-        "projectType": "Tutorial, Technical How-To",
-        "description": "Created step-by-step tutorial showing administrators how to track and report on how long CRM records spend in each status (e.g., how long a sales opportunity stays in \"Negotiation\" stage).",
-        "fullDescription": "Created step-by-step tutorial showing administrators how to track and report on how long CRM records spend in each status (e.g., how long a sales opportunity stays in \"Negotiation\" stage). Included calculated fields, workflow automation, and reporting configuration.",
-        "skills": ["Tutorial writing", "Use case documentation", "Step-by-step instruction", "Configuration documentation"],
-        "link": "https://support.sugarcrm.com/knowledge_base/sugarbpm/capturing_how_long_a_record_spends_in_each_status_using_sugarbpm/",
-        "results": "Provided customers with solution to common reporting need. Reduced support tickets for status duration tracking.",
-        "tags": ["Tutorial", "Use Cases", "SugarCRM", "Reporting", "Configuration"]
-    },
-    {
-        "id": "team-permissions",
-        "title": "Admin documentation: Permissions management",
-        "projectType": "Security Documentation, Permissions Documentation",
-        "description": "Documented SugarCRM's team-based security and permissions model. Explained how to create teams, assign users, configure role permissions, and implement data access controls.",
-        "fullDescription": "Documented SugarCRM's team-based security and permissions model. Explained how to create teams, assign users, configure role permissions, and implement data access controls. Critical for enterprises with complex organizational structures and security requirements.",
-        "skills": ["Security and permissions documentation", "Enterprise feature documentation", "Configuration procedures", "Access control documentation"],
-        "link": "https://support.sugarcrm.com/smartlinks/administration_guide/team_management/",
-        "results": "Enabled administrators to correctly implement team-based security. Supported enterprise compliance requirements.",
-        "tags": ["Security Documentation", "Permissions", "Enterprise", "SugarCRM", "Compliance"]
-    },
-    {
-        "id": "upsert-products",
-        "title": "Product descriptions: SugarCRM Marketplace addons",
-        "projectType": "Product Marketing, Technical Marketing Content",
-        "description": "Created product descriptions and technical marketing content for CRM enhancements sold on SugarCRM Marketplace. Wrote for both business decision-makers and technical administrators.",
-        "fullDescription": "Created product descriptions and technical marketing content for CRM enhancements sold on SugarCRM Marketplace. Wrote for both business decision-makers and technical administrators. Explained features, benefits, use cases, and technical requirements.",
-        "skills": ["Product marketing writing", "Technical marketing content", "Multi-audience writing (business + technical)", "Benefit-focused writing"],
-        "results": "Supported product sales on SugarCRM Marketplace. Communicated value proposition to potential customers.",
-        "link": "https://upsertconsulting.com/#/plugins",
-        "tags": ["Product Marketing", "Technical Marketing", "Multi-Audience", "SugarCRM", "Marketplace"]
-    },
-    {
-        "id": "wiki-refactor",
-        "title": "AWS service documentation wiki refactor",
-        "projectType": "Content Governance, Information Architecture",
-        "description": "Led comprehensive restructure of AWS Technical Content Experience wiki ecosystem serving 200+ writers. Designed standardized templates, editorial guidelines, and governance framework.",
-        "fullDescription": "Led comprehensive restructure of AWS Technical Content Experience wiki ecosystem serving 200+ writers. Designed standardized templates, editorial guidelines, and governance framework for org-wide content consistency. Managed 8-week, 4-workstream delivery plan with cross-functional team of 10 contributors. Optimized content architecture for AI-powered knowledge management.",
-        "skills": ["Content governance at scale", "Information architecture", "Template and framework design", "Program management", "Cross-functional leadership", "Change management"],
-        "results": "Consistent structure across AWS doc org. Enables AI-powered discovery and content findability.",
-        "tags": ["Content Governance", "Information Architecture", "Program Management", "AWS", "AI/ML", "Scale"]
-    },
-    {
-        "id": "ai-upskilling",
-        "title": "AWS documentation AI upskilling program",
-        "projectType": "Training Program, AI Tool Development",
-        "description": "Contributed to design and implementation of AI transformation program for 200+ AWS technical writers. Built internal GenAI tool for content creation and review—now has thousands of executions across AWS services.",
-        "fullDescription": "Contributed to design and implementation of AI transformation program for 200+ AWS technical writers. Built internal GenAI tool for content creation and review—now has thousands of executions across AWS services. Created organization-wide AI context files and training materials for content automation. Established best practices for AI-assisted writing workflows and quality assurance.",
-        "skills": ["AI tool training and development", "Organizational change management", "Training material creation", "Quality assurance framework", "Best practices development", "Scale thinking"],
-        "results": "GenAI tool achieved thousands of uses across AWS services. Increased writer efficiency while maintaining quality standards. Established framework for responsible AI use in technical content.",
-        "tags": ["AI/ML", "Training Programs", "Organizational Change", "Automation", "AWS", "GenAI"]
-    },
-    {
-        "id": "task-migration",
-        "title": "AWS task management tool migration",
-        "projectType": "Process Improvement, Change Management",
-        "description": "Led pilot program transitioning AWS documentation intake from legacy SIM ticket system to modern Taskei platform. Analyzed feedback from 15+ service verticals.",
-        "fullDescription": "Led pilot program transitioning AWS documentation intake from legacy SIM ticket system to modern Taskei platform. Analyzed feedback from 15+ service verticals. Documented 40 data-driven recommendations for organization-wide rollout. Created comprehensive training materials and migration checklists.",
-        "skills": ["Process analysis and improvement", "Stakeholder feedback synthesis", "Training material creation", "Change management", "Data-driven recommendations"],
-        "results": "Reduced task processing overhead. Improved cross-team collaboration workflows. Recommendations informed organization-wide migration strategy.",
-        "tags": ["Process Improvement", "Change Management", "Program Management", "AWS", "Data-Driven"]
-    },
-    {
-        "id": "multi-company",
-        "title": "Multi-company documentation integration",
-        "projectType": "Content Consolidation, Change Management",
-        "description": "Managed documentation consolidation during 3 SugarCRM product acquisitions. Standardized content processes across 150+ annual releases and 20+ product versions.",
-        "fullDescription": "Managed documentation consolidation during 3 SugarCRM product acquisitions. Standardized content processes across 150+ annual releases and 20+ product versions. Integrated newly acquired product documentation into existing content ecosystem while maintaining quality and team morale.",
-        "skills": ["M&A documentation management", "Content standardization at scale", "Process design", "Team leadership", "Quality management"],
-        "results": "Maintained 100% team retention through 3 acquisitions. Successfully integrated all acquired product documentation. Reduced customer support case volume by 30% through strategic content improvements.",
-        "tags": ["M&A", "Content Consolidation", "Team Leadership", "Process Design", "SugarCRM", "Scale"]
-    }
+        {
+            "id": "ai-rfp-assistant",
+            "title": "AI-Powered RFP Assistant",
+            "projectType": "AI Development, Internal Tool, Process Automation",
+            "description": "Built an AI assistant with MS Copilot Studio to automate RFP submissions. By training the bot on past replies, it enabled content reuse, ensuring consistency, accuracy, and a unified company voice.",
+            "fullDescription": "Developed an internal AI assistant using Microsoft Copilot Studio to streamline and automate the creation of RFP (Request for Proposal) submissions. The primary goal was to leverage existing knowledge by training the bot on a database of previously submitted, successful RFP replies. This allowed the tool to identify and reuse common answers to frequently asked questions, such as 'our position on server security is...'. The project automated a repetitive and time-consuming process, ensuring a consistent and accurate company voice across all submissions, regardless of the individual author.",
+            "skills": ["Microsoft Copilot Studio", "AI Bot Development", "Process Automation", "Knowledge Management", "Content Strategy"],
+            "results": "Successfully automated a significant portion of the RFP reply process. This led to increased consistency and accuracy in submissions, maintained a common company voice, and significantly reduced the time required by the team to respond to new proposals.",
+            "link": "",
+            "image": "",
+            "tags": ["AI", "Automation", "Microsoft Copilot Studio", "RFP", "Internal Tool", "GenAI"]
+        },
+        {
+            "id": "skyword-hybrid-agile-teams",
+            "title": "Hybrid Agile Workflow Implementation",
+            "projectType": "Team Management, Process Improvement, Agile Methodology",
+            "description": "Designed and managed a hybrid agile workflow at Skyword, splitting a 12-developer team into two specialized Scrum (Application) and Kanban (Rapid Response) squads.",
+            "fullDescription": "While leading a 12-developer full-stack team at Skyword, I restructured our workflow to better manage a large-scale web application. To balance new feature development with incoming bug fixes and keep the team engaged, I split the group into two sub-teams. The 'Application Team' ran on a standard Scrum model, focusing on planned feature sprints. The 'Rapid Response Team' operated in a Kanban style, allowing them to flexibly address urgent bugs and smaller tasks as they arose. To ensure knowledge-sharing and prevent burnout, we successfully rotated personnel between the two teams every couple of months.",
+            "skills": ["Agile Methodologies", "Scrum", "Kanban", "Team Leadership", "Process Improvement", "Resource Management", "Workflow Optimization"],
+            "results": "This dual-team structure successfully protected the Application team's sprint goals from interruption while improving the velocity of bug fixes. The rotation system increased team morale, prevented developer burnout, and fostered a broader understanding of the application across all team members.",
+            "link": "",
+            "image": "",
+            "tags": ["Agile", "Scrum", "Kanban", "Team Management", "Process", "Skyword", "Leadership"]
+        }
     ];
 
     // Store projects globally for click handlers

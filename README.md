@@ -1,6 +1,7 @@
-# jillshaheen.com
+# michaelshaheen.com
 
-Professional portfolio website for Jill Shaheen - Technical Writer, Content Strategist, and Team Leader.
+Professional portfolio website for Michael Shaheen - Sr Web Development Director, Scrum Master, and Team Leader.
+Note this site was originally developed by Jill Shaheen.
 
 ## Overview
 
@@ -8,14 +9,14 @@ This is a single-page portfolio website showcasing professional experience, tech
 
 ## Live Site
 
-Visit the live portfolio at: [jillshaheen.com](https://jillshaheen.com)
+Visit the live portfolio at: [mshaheen220.github.io/michaelshaheen.com/](https://mshaheen220.github.io/michaelshaheen.com/)
 
 
 
 ## Project Structure
 
 ```
-jillshaheen.com/
+michaelshaheen.com/
 ├── index.html          # Main HTML file
 ├── css/
 │   └── styles.css      # Custom CSS styles
@@ -61,8 +62,8 @@ To run this website locally:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/jburgh/jillshaheen.com.git
-cd jillshaheen.com
+git clone https://github.com/mshaheen220/michaelshaheen.com.git
+cd michaelshaheen.com
 ```
 
 2. Open `index.html` in your web browser, or use a local server:
@@ -107,12 +108,12 @@ The site uses a professional color palette that can be customized in `css/styles
 
 ## Contact
 
-- **Email**: jillshaheen@gmail.com
-- **LinkedIn**: [linkedin.com/in/jillshaheen](https://www.linkedin.com/in/jillshaheen)
+- **Email**: michael@michaelshaheen.com
+- **LinkedIn**: [linkedin.com/in/michaelshaheen](https://www.linkedin.com/in/michaelshaheen)
 
 ## License
 
-© 2025 Jill Shaheen. All rights reserved.
+© 2025 Michael Shaheen. All rights reserved.
 
 ## Acknowledgments
 
