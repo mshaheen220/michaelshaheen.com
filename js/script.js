@@ -255,6 +255,30 @@ $(document).ready(function() {
             "link": "",
             "image": "",
             "tags": ["Agile", "Scrum", "Kanban", "Team Management", "Process", "Skyword", "Leadership"]
+        },
+        {
+            "id": "ai-marketing-persona-bot",
+            "title": "Dynamic AI Marketing Persona Engine",
+            "projectType": "AI Development, Marketing Technology, Internal Tool",
+            "description": "Developed an AI bot at Brunner to create, manage, and evolve marketing personas. The tool ensures consistency and allows personas to be dynamically updated with new traits or product preferences.",
+            "fullDescription": "At Brunner, I architected and built an AI assistant for creating and managing marketing personas. The initial goal was consistency and the re-use of successful archetypes. Its key innovation was the ability for personas to 'grow'—a user could request the 'Busy Bee' persona and add a new trait, like 'avid outdoorsman'. This information was saved, allowing the persona to evolve. The team could then interact with the bot, asking it to craft content for specific personas (e.g., 'appeal to Marketing Professionals and Creative Writers') or query its knowledge base ('which persona would like this slogan the most?'), making our marketing efforts more targeted and intelligent.",
+            "skills": ["AI Bot Development", "Marketing Technology (MarTech)", "Persona Generation", "Content Strategy", "Prompt Engineering", "Knowledge Management", "GenAI"],
+            "results": "Delivered a 'living' library of reusable, consistent marketing personas. This tool empowered the team to dynamically update personas with new preferences and query the system for content tailoring, significantly improving the relevance and targeting of our creative work.",
+            "link": "",
+            "image": "",
+            "tags": ["AI", "Marketing", "Personas", "Brunner", "Internal Tool", "GenAI", "Content Strategy", "MarTech"]
+        },
+        {
+            "id": "pm-workflow-integration",
+            "title": "Developer Workflow & PM Integration Tool",
+            "projectType": "Internal Tool, Process Automation, API Integration",
+            "description": "Created a simple web-based checklist for developers to update an antiquated project management system via its SOAP API, saving time and adding accountability.",
+            "fullDescription": "Developed a simple web page to streamline developer workflows. The interface allowed a developer to select their name and project from drop-downs, then check off all completed project steps. Upon submission, the tool automatically connected to our antiquated project management system, which only had a SOAP API. I successfully integrated our new tool with this legacy system to automatically update the ticket status and log a message, saving the team a bunch of time and adding a layer of accountability, as each ticket update was now formally tied to a developer's attestation of completed work.",
+            "skills": ["API Integration", "SOAP APIs", "Web Development", "Process Automation", "Workflow Optimization", "Legacy System Integration"],
+            "results": "Dramatically reduced the time developers spent on manual data entry in the PM system. The integration successfully bridged a modern web tool with a legacy SOAP API and introduced a new layer of accountability for project step completion.",
+            "link": "",
+            "image": "",
+            "tags": ["Automation", "Internal Tool", "API", "SOAP", "Process Improvement", "Project Management", "Legacy System"]
         }
     ];
 
