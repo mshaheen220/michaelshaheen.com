@@ -110,7 +110,62 @@ body.palette-7 {
     --charcoal: #3A4F4F; /* Deep Blue-Green Gray (complements teal) */
     --white: #FFFFFF;
 }
-
+/* Palette 8: Hunter & Gold */
+body.palette-8 {
+    --teal-primary: #2C6E49; /* Hunter Green (Your color) */
+    --teal-dark: #225738;
+    --teal-light: #4A8C67;
+    
+    --orange-primary: #DDA448; /* Rich Amber/Gold (New Accent) */
+    --orange-dark: #C28E3A;
+    --orange-light: #E8B86E;
+    
+    --cream: #EAE2B7; /* Warm Parchment (Your color) */
+    --charcoal: #313633; /* Dark, warm greenish-gray */
+    --white: #FFFFFF;
+}
+/* Palette 9: Canyon Sunset */
+body.palette-9 {
+    --teal-primary: #D36A34; /* Burnt Orange / Canyon Rust */
+    --teal-dark: #B35221;
+    --teal-light: #E0895B;
+    
+    --orange-primary: #3A5B6B; /* Deep Steel Blue */
+    --orange-dark: #2C4550;
+    --orange-light: #577C8E;
+    
+    --cream: #F7F3EF; /* Light Beige */
+    --charcoal: #3D3531; /* Dark Brownish-Gray */
+    --white: #FFFFFF;
+}
+/* Palette 10: Graphite & Signal */
+body.palette-10 {
+    --teal-primary: #4A4A4A; /* Graphite Gray */
+    --teal-dark: #333333;
+    --teal-light: #6B6B6B;
+    
+    --orange-primary: #F0C419; /* Bright Signal Yellow */
+    --orange-dark: #DDAE00;
+    --orange-light: #FFD44C;
+    
+    --cream: #F5F5F5; /* Very Light Gray */
+    --charcoal: #212121; /* Near Black */
+    --white: #FFFFFF;
+}
+/* Palette 11: Espresso & Powder Blue */
+body.palette-11 {
+    --teal-primary: #4E342E; /* Deep Espresso Brown */
+    --teal-dark: #3E2723;
+    --teal-light: #6A4F4A;
+    
+    --orange-primary: #A9D1E2; /* Soft Powder Blue */
+    --orange-dark: #8FBACF;
+    --orange-light: #C7E4F1;
+    
+    --cream: #F9F6F0; /* Warm Parchment */
+    --charcoal: #2A1D1A; /* Almost-black brown */
+    --white: #FFFFFF;
+}
 * {
     margin: 0;
     padding: 0;
