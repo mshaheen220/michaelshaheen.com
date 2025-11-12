@@ -1,0 +1,10 @@
+# All dot files #
+###################
+.*
+!.gitignore
+
+
+# OS generated files #
+######################
+ehthumbs.db
+Thumbs.db
