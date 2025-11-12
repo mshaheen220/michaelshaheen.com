@@ -279,6 +279,18 @@ $(document).ready(function() {
             "link": "",
             "image": "",
             "tags": ["Automation", "Internal Tool", "API", "SOAP", "Process Improvement", "Project Management", "Legacy System"]
+        },
+        {
+            "id": "brunner-headless-website",
+            "title": "Strategic Headless CMS Redevelopment (R&D)",
+            "projectType": "Headless CMS, Web Redevelopment, R&D, Strategic Planning",
+            "description": "Led an R&D project to redevelop the Brunner website as a headless build (Builder.io & React). The goal was to gain direct experience to advise clients, proving we believed in the technology.",
+            "fullDescription": "At Brunner, I led the strategic redevelopment of our marketing website as a hands-on R&D project. With headless CMS being a major new trend, our goal was to 'dogfood' the technology to gain the hands-on experience needed to confidently advise future clients. This required extensive research and testing of many systems. We initially selected Contentful as the data store and Builder.io as the visual editor, but as Builder.io's platform rapidly added features, it made Contentful unnecessary, and we pivoted to using Builder.io exclusively. The project, built in React, also integrated our Figma design system with Storybook and successfully pulled in legacy blog content from WordPress via its API.",
+            "skills": ["Headless CMS", "Technology Evaluation", "R&D", "Strategic Planning", "Builder.io", "React", "Storybook", "Figma", "API Integration", "Contentful", "Project Leadership"],
+            "results": "Successfully launched the new site and gained critical, hands-on expertise with the headless paradigm. This R&D gave us the authority to advise clients on the true trade-offs. The key strategic insight was that while headless offers flexibility, it often requires rebuilding mature editor-focused features that traditional CMSes already provide, allowing us to make more nuanced and appropriate recommendations for clients.",
+            "link": "",
+            "image": "",
+            "tags": ["Headless", "CMS", "R&D", "Strategy", "Builder.io", "React", "Storybook", "Figma", "Brunner", "Website", "API"]
         }
     ];
 
