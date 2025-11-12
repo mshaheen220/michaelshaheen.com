@@ -1268,7 +1268,9 @@ h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
 }
-
+.sm-truncate {
+  font-size: 1.5rem !important;
+}
 .education-degree {
     font-size: 1.1rem;
     margin-bottom: 15px;
