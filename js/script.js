@@ -291,6 +291,30 @@ $(document).ready(function() {
             "link": "",
             "image": "",
             "tags": ["Headless", "CMS", "R&D", "Strategy", "Builder.io", "React", "Storybook", "Figma", "Brunner", "Website", "API"]
+        },
+        {
+            "id": "skyword-legacy-migration",
+            "title": "Legacy App Modernization (AngularJS to React)",
+            "projectType": "Legacy Modernization, Technical Debt Management, Front-End Architecture",
+            "description": "Orchestrated a strategic, incremental migration of a large Skyword application from AngularJS, jQuery, and vanilla JS to React, successfully reducing technical debt without disrupting existing functionality.",
+            "fullDescription": "At Skyword, I tackled the challenge of a large application encumbered with legacy code, including a mix of AngularJS 1, jQuery, and vanilla JavaScript. Recognizing the need to move off AngularJS, I architected a tech debt plan for an incremental migration to React. We stopped all new AngularJS development and began building a new section of the app entirely in React. This strategy allowed us to modernize without breaking existing features. For a time, we maintained both technologies, but this phased approach enabled us to systematically convert legacy modules into modern React components, eventually eliminating the older frameworks.",
+            "skills": ["Legacy Migration", "Technical Debt Management", "AngularJS", "React", "Front-End Architecture", "JavaScript", "JQuery", "Change Management", "Strategic Planning"],
+            "results": "Successfully modernized the application's front-end stack, phasing out AngularJS and significantly reducing technical debt. This incremental strategy minimized risk, prevented service disruption, and successfully transitioned the development team to modern React practices.",
+            "link": "",
+            "image": "",
+            "tags": ["React", "AngularJS", "Legacy Code", "Migration", "Technical Debt", "Skyword", "Front-End", "Architecture"]
+        },
+        {
+            "id": "sugarcrm-iot-integration-poc",
+            "title": "IoT & App Integration Proof-of-Concept",
+            "projectType": "Proof-of-Concept (PoC), IoT Integration, API Integration, R&D",
+            "description": "Rapidly developed (in 3 days) a PoC at SugarCRM using Zapier and IFTTT to connect the CRM to Slack, smart bulbs, and Arduinos, proving hardware/software connectivity.",
+            "fullDescription": "At SugarCRM, I built an experimental project to illustrate the integration and connectivity of disparate apps and hardware. Using no-code platforms like Zapier and IFTTT, I connected our SugarCRM instance to our office. When a new sales 'Opportunity' was marked as 'Closed-Won', it would automatically trigger multiple events: a Slack message would fire off to designated people, a smart bulb in the office would turn on and blink, and an Arduino-powered device would play a sound. The entire project took only 3 days but successfully proved that we could connect both software (SaaS) and hardware (IoT) to our core application.",
+            "skills": ["Proof-of-Concept (PoC)", "Rapid Prototyping", "API Integration", "IoT", "Zapier", "IFTTT", "SugarCRM", "Slack", "Arduino", "Smart Devices"],
+            "results": "Successfully demonstrated in just 3 days that the SugarCRM platform could be integrated with both third-party SaaS applications and physical IoT hardware. This tangible PoC clearly illustrated the platform's powerful and flexible integration capabilities.",
+            "link": "",
+            "image": "",
+            "tags": ["IoT", "API", "Integration", "SugarCRM", "Zapier", "IFTTT", "PoC", "R&D", "Hardware", "Rapid Prototyping"]
         }
     ];
 
