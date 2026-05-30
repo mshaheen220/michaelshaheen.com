@@ -233,6 +233,42 @@ $(document).ready(function() {
     // Projects data - embedded directly in JavaScript
     const PROJECTS_DATA = [
         {
+            "id": "gene-e-genealogy-agent",
+            "title": "Gene E. - AI Genealogy Agent & RAG Pipeline",
+            "projectType": "AI/Machine Learning, Retrieval-Augmented Generation (RAG), Data Engineering",
+            "description": "Developed a localized AI-powered genealogy assistant featuring a dual-brain Retrieval-Augmented Generation (RAG) architecture to parse family trees, process historical documents via OCR, and accurately answer complex family history queries.",
+            "fullDescription": "I engineered a comprehensive AI Genealogy Agent designed to parse large GEDCOM family trees and historical media into a highly searchable local environment. The system utilizes a 'Dual-Brain' routing architecture: it intelligently routes aggregate and mathematical questions to a dynamically queried SQLite database to prevent hallucinations, while directing biographical or story-based queries to a LanceDB vector store using locally generated embeddings. A Python data pipeline handles GEDCOM extraction and utilizes the Google Gemini API to perform OCR transcription and automated triage on archival documents. The frontend features a Node.js/Express application with WebSockets (Socket.io) for live audio transcription during family interviews and includes a proactive Triage Dashboard that evaluates documents to generate actionable research tasks.",
+            "skills": ["Python", "Node.js", "Retrieval-Augmented Generation (RAG)", "Generative AI", "Google Gemini API", "LanceDB", "SQLite", "Vector Databases", "LangChain", "WebSockets", "OCR", "Data Engineering"],
+            "results": "Delivered a highly accurate, privacy-centric AI application that performs blazing-fast local semantic searches. Successfully automated the transcription and entity resolution of unstructured historical documents, significantly reducing manual research time while providing an intuitive, voice-enabled interface for interactive family history exploration.",
+            "link": "",
+            "image": "",
+            "tags": ["AI", "RAG", "Python", "Node.js", "Gemini", "LLM", "LanceDB", "SQLite", "Genealogy", "Full-Stack"]
+        },
+        {
+            "id": "mindframe-cbt-app",
+            "title": "Mindframe: AI-Powered CBT Application",
+            "projectType": "AI Application Development, Front-End Architecture, HealthTech",
+            "description": "Built a privacy-first React application leveraging the Google Gemini API to guide users through structured cognitive behavioral therapy (CBT) workflows like Socratic restructuring and mood regulation.",
+            "fullDescription": "Designed and built Mindframe, a personal cognitive behavioral therapy (CBT) tool that helps users navigate difficult thoughts through guided workflows. The application features a Thought Triage system, Socratic Questioning, and a Worry Tree. I integrated the Google Gemini API using advanced prompt engineering and system instructions to act as a CBT therapist, providing users with personalized AI analysis, balanced thoughts, and coping strategies. Built entirely as a client-side React application using Vite, the app ensures complete user privacy by utilizing LocalStorage for all data persistence—meaning sensitive data never leaves the user's device. Additional features include a comprehensive analytics dashboard for tracking sessions and technique usage, interactive cognitive distortion identification, and local data backup/import functionality.",
+            "skills": ["React", "Google Gemini API", "Prompt Engineering", "Vite", "Front-End Architecture", "LocalStorage", "State Management", "AI Integration"],
+            "results": "Delivered a responsive, privacy-focused client-side application that successfully integrates generative AI to provide real-time cognitive reframing assistance, completely eliminating the need for a backend database while maintaining full data portability.",
+            "link": "",
+            "image": "",
+            "tags": ["React", "Google Gemini", "AI", "Vite", "Front-End", "HealthTech", "Web App", "Privacy-First"]
+        },
+        {
+            "id": "dynamic-family-tree",
+            "title": "Dynamic Interactive Family Tree",
+            "projectType": "Front-End Development, Data Visualization, Algorithms",
+            "description": "Developed a browser-based, interactive family tree viewer in React that dynamically parses GEDCOM files and calculates complex, multi-generational Directed Acyclic Graph (DAG) layouts on the fly.",
+            "fullDescription": "Built a serverless, interactive family tree application capable of rendering massive genealogy datasets directly in the browser. Using React and a specialized math engine, the app parses standard GEDCOM files and handles complex lineage scenarios like pedigree collapse, half-siblings, and multiple marriages through Directed Acyclic Graph (DAG) algorithms. I engineered a highly-resilient custom parser that sanitizes flawed data from major genealogy platforms, utilizing techniques like strict bidirectionality checks and invisible dummy nodes to prevent layout crashes. Features include smooth pan/zoom camera controls, high-resolution PDF exports, demographic analytics, interactive branch highlighting, and dynamic recentering.",
+            "skills": ["React", "JavaScript", "Data Visualization", "Algorithms (DAG)", "Data Parsing & Sanitization", "Front-End Development", "Vite", "UI/UX Design"],
+            "results": "Created a seamless, interactive experience for exploring vast family networks without a backend. The robust custom parsing engine successfully mitigated common data export errors from platforms like Ancestry.com, ensuring crash-free, mathematically balanced, and printable genealogical grid layouts.",
+            "link": "",
+            "image": "",
+            "tags": ["React", "Data Visualization", "GEDCOM", "Algorithms", "Front-End", "Vite", "Parsing"]
+        },
+        {
             "id": "ai-rfp-assistant",
             "title": "AI-Powered RFP Assistant",
             "projectType": "AI Development, Internal Tool, Process Automation",
