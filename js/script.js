@@ -242,7 +242,8 @@ $(document).ready(function() {
             "results": "Delivered a highly accurate, privacy-centric AI application that performs blazing-fast local semantic searches. Successfully automated the transcription and entity resolution of unstructured historical documents, significantly reducing manual research time while providing an intuitive, voice-enabled interface for interactive family history exploration.",
             "link": "",
             "image": "",
-            "tags": ["AI", "RAG", "Python", "Node.js", "Gemini", "LLM", "LanceDB", "SQLite", "Genealogy", "Full-Stack"]
+            "tags": ["AI", "RAG", "Python", "Node.js", "Gemini", "LLM", "LanceDB", "SQLite", "Genealogy", "Full-Stack"],
+            "flag": ["cool"]
         },
         {
             "id": "mindframe-cbt-app",
@@ -254,7 +255,8 @@ $(document).ready(function() {
             "results": "Delivered a responsive, privacy-focused client-side application that successfully integrates generative AI to provide real-time cognitive reframing assistance, completely eliminating the need for a backend database while maintaining full data portability.",
             "link": "",
             "image": "",
-            "tags": ["React", "Google Gemini", "AI", "Vite", "Front-End", "HealthTech", "Web App", "Privacy-First"]
+            "tags": ["React", "Google Gemini", "AI", "Vite", "Front-End", "HealthTech", "Web App", "Privacy-First"],
+            "flag": []
         },
         {
             "id": "dynamic-family-tree",
@@ -266,7 +268,8 @@ $(document).ready(function() {
             "results": "Created a seamless, interactive experience for exploring vast family networks without a backend. The robust custom parsing engine successfully mitigated common data export errors from platforms like Ancestry.com, ensuring crash-free, mathematically balanced, and printable genealogical grid layouts.",
             "link": "",
             "image": "",
-            "tags": ["React", "Data Visualization", "GEDCOM", "Algorithms", "Front-End", "Vite", "Parsing"]
+            "tags": ["React", "Data Visualization", "GEDCOM", "Algorithms", "Front-End", "Vite", "Parsing"],
+            "flag": ["cool"]
         },
         {
             "id": "ai-rfp-assistant",
@@ -278,7 +281,8 @@ $(document).ready(function() {
             "results": "Successfully automated a significant portion of the RFP reply process. This led to increased consistency and accuracy in submissions, maintained a common company voice, and significantly reduced the time required by the team to respond to new proposals.",
             "link": "",
             "image": "",
-            "tags": ["AI", "Automation", "Microsoft Copilot Studio", "RFP", "Internal Tool", "GenAI"]
+            "tags": ["AI", "Automation", "Microsoft Copilot Studio", "RFP", "Internal Tool", "GenAI"],
+            "flag": []
         },
         {
             "id": "skyword-hybrid-agile-teams",
@@ -290,7 +294,8 @@ $(document).ready(function() {
             "results": "This dual-team structure successfully protected the Application team's sprint goals from interruption while improving the velocity of bug fixes. The rotation system increased team morale, prevented developer burnout, and fostered a broader understanding of the application across all team members.",
             "link": "",
             "image": "",
-            "tags": ["Agile", "Scrum", "Kanban", "Team Management", "Process", "Skyword", "Leadership"]
+            "tags": ["Agile", "Scrum", "Kanban", "Team Management", "Process", "Skyword", "Leadership"],
+            "flag": []
         },
         {
             "id": "ai-marketing-persona-bot",
@@ -302,7 +307,8 @@ $(document).ready(function() {
             "results": "Delivered a 'living' library of reusable, consistent marketing personas. This tool empowered the team to dynamically update personas with new preferences and query the system for content tailoring, significantly improving the relevance and targeting of our creative work.",
             "link": "",
             "image": "",
-            "tags": ["AI", "Marketing", "Personas", "Brunner", "Internal Tool", "GenAI", "Content Strategy", "MarTech"]
+            "tags": ["AI", "Marketing", "Personas", "Brunner", "Internal Tool", "GenAI", "Content Strategy", "MarTech"],
+            "flag": []
         },
         {
             "id": "pm-workflow-integration",
@@ -314,7 +320,8 @@ $(document).ready(function() {
             "results": "Dramatically reduced the time developers spent on manual data entry in the PM system. The integration successfully bridged a modern web tool with a legacy SOAP API and introduced a new layer of accountability for project step completion.",
             "link": "",
             "image": "",
-            "tags": ["Automation", "Internal Tool", "API", "SOAP", "Process Improvement", "Project Management", "Legacy System"]
+            "tags": ["Automation", "Internal Tool", "API", "SOAP", "Process Improvement", "Project Management", "Legacy System"],
+            "flag": []
         },
         {
             "id": "brunner-headless-website",
@@ -326,7 +333,8 @@ $(document).ready(function() {
             "results": "Successfully launched the new site and gained critical, hands-on expertise with the headless paradigm. This R&D gave us the authority to advise clients on the true trade-offs. The key strategic insight was that while headless offers flexibility, it often requires rebuilding mature editor-focused features that traditional CMSes already provide, allowing us to make more nuanced and appropriate recommendations for clients.",
             "link": "",
             "image": "",
-            "tags": ["Headless", "CMS", "R&D", "Strategy", "Builder.io", "React", "Storybook", "Figma", "Brunner", "Website", "API"]
+            "tags": ["Headless", "CMS", "R&D", "Strategy", "Builder.io", "React", "Storybook", "Figma", "Brunner", "Website", "API"],
+            "flag": []
         },
         {
             "id": "skyword-legacy-migration",
@@ -338,7 +346,8 @@ $(document).ready(function() {
             "results": "Successfully modernized the application's front-end stack, phasing out AngularJS and significantly reducing technical debt. This incremental strategy minimized risk, prevented service disruption, and successfully transitioned the development team to modern React practices.",
             "link": "",
             "image": "",
-            "tags": ["React", "AngularJS", "Legacy Code", "Migration", "Technical Debt", "Skyword", "Front-End", "Architecture"]
+            "tags": ["React", "AngularJS", "Legacy Code", "Migration", "Technical Debt", "Skyword", "Front-End", "Architecture"],
+            "flag": []
         },
         {
             "id": "sugarcrm-iot-integration-poc",
@@ -350,7 +359,8 @@ $(document).ready(function() {
             "results": "Successfully demonstrated in just 3 days that the SugarCRM platform could be integrated with both third-party SaaS applications and physical IoT hardware. This tangible PoC clearly illustrated the platform's powerful and flexible integration capabilities.",
             "link": "",
             "image": "",
-            "tags": ["IoT", "API", "Integration", "SugarCRM", "Zapier", "IFTTT", "PoC", "R&D", "Hardware", "Rapid Prototyping"]
+            "tags": ["IoT", "API", "Integration", "SugarCRM", "Zapier", "IFTTT", "PoC", "R&D", "Hardware", "Rapid Prototyping"],
+            "flag": []
         }
     ];
 
@@ -368,8 +378,13 @@ $(document).ready(function() {
         }
 
         projects.forEach(function(project) {
+            const isCool = project.flag && project.flag.includes("cool");
+            const coolClass = isCool ? ' project-card-cool' : '';
+            const coolBadge = isCool ? `<div class="project-cool-badge" title="Visually cool project!"><i class="fas fa-star"></i></div>` : '';
+
             const projectCard = `
-                <div class="project-card" data-project-id="${project.id}">
+                <div class="project-card${coolClass}" data-project-id="${project.id}">
+                    ${coolBadge}
                     <div class="project-card-content">
                         <div class="project-card-type">${project.projectType}</div>
                         <h3 class="project-card-title">${project.title}</h3>
@@ -599,6 +614,3 @@ $(document).ready(function() {
     });
 
 });
-
-
-
